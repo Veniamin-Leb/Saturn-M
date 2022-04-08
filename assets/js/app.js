@@ -76,18 +76,21 @@ $('.reviews__slider').slick({
         {
             breakpoint: 800,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 550,
-            settings: {
-                slidesToShow: 1,
+                slidesToShow: 3,
                 slidesToScroll: 1,
             }
         }
 ]
+});
+$('.reviews__slidermob').slick({
+    dots: false,
+    infinite: true,
+    arrows:true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '<button type="button" class="slick-next"><img src="assets/IMG/arright.svg"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="assets/IMG/arleft.svg"></button>',
 });
 $('.partner__slider').slick({
     dots: false,
