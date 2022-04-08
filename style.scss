@@ -362,6 +362,61 @@ header{
             }
             
         }
+        .reviews__slidermob{
+            display: none;
+            .slider__block{
+                width: 260px;
+                height: 360px;
+                padding: 23px 19px;
+                margin: 0 20px;
+                background: #F8F8F8;
+                position: relative;
+                span{
+                    width: 100%;
+                    height: 1px;
+                    display: block;
+                    background:#353F63;
+                }
+                p{
+                    padding-top: 39px;
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 20px;
+    
+                    color: #080809;
+                }
+            }
+            .slick-slide{
+                width: 288px;
+                margin: 0 60px;
+            }
+            .slick-prev{
+                width: 28px;
+                height: 59px;
+                position: absolute;
+                top: 40%;
+                left: 0%;
+                z-index: 3;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+            .slick-next{
+                width: 28px;
+                height: 59px;
+                position: absolute;
+                top: 40%;
+                right: 2%;
+                z-index: 3;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+            .slick-slide:first-child{
+                opacity: .5;
+            }
+            
+        }
     }
 }
 .conditions{
@@ -839,20 +894,11 @@ footer{
         }
         .reviews__content{
             .reviews__slider{
-                .slider__block{
-                    width: 100%;
-                    height: 400px;
-                }
-                .slick-prev{
-                    top: 40%;
-                    left: 2%;
-                }
-                .slick-next{
-                    top: 40%;
-                    right: 2%;
-                }
+                display: none;
             }
-
+            .reviews__slidermob{
+                display: block;
+            }
         }
     }
     .conditions{
