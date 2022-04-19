@@ -127,6 +127,7 @@ header .header__text a:hover span {
   padding-left: 40px;
   padding-top: 65px;
   padding-right: 140px;
+  animation: menu .3s linear forwards;
 }
 
 .header__menu a {
@@ -257,12 +258,14 @@ header .header__text a:hover span {
   padding: 47px 0 37px;
   background: url("../IMG/Aboutus.svg") center no-repeat;
   background-size: contain;
+  animation: menu .5s linear forwards;
 }
 
 .about .container p:last-child {
   padding: 47px 0 37px;
   background: url("../IMG/History.svg") top no-repeat;
   background-size: contain;
+  animation: menu .5s linear forwards;
 }
 
 .product {
@@ -944,5 +947,17 @@ footer .container .footer__links .links__block p {
   footer .container .footer__links .links__block p {
     font-size: 18px;
     line-height: 20px;
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
