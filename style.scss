@@ -121,6 +121,7 @@ header{
     padding-left: 40px;
     padding-top: 65px;
     padding-right: 140px;
+    animation: menu .3s linear forwards;
     a{  
         width: 100%;
         font-style: normal;
@@ -208,12 +209,15 @@ header{
     width: 100%;
     background: #F8F8F8;
     box-shadow: inset 0px 0px 30px #B0B0B0;
+    
     .container{
         padding: 55px 0 71px;
+
         .about__buttons{
             margin: 0 auto;
             padding: 4.5px;
             border: 0.8px solid rgba(164, 164, 164, 0.5);
+            
             a{
                 padding: 9px 32px;
                 font-weight: 500;
@@ -237,11 +241,13 @@ header{
             padding: 47px 0 37px;
             background: url("../IMG/Aboutus.svg") center no-repeat;
             background-size: contain;
+            animation: menu .5s linear forwards;
         }
         p:last-child{
             padding: 47px 0 37px;
             background: url("../IMG/History.svg") top no-repeat;
             background-size: contain;
+            animation: menu .5s linear forwards;
         }
     }
 }
@@ -986,5 +992,16 @@ footer{
                 }
             }
         }
+    }
+}
+@keyframes menu{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
     }
 }
