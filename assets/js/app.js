@@ -14,7 +14,7 @@ let gear__plus = $("#gear__plus");
 let service = $("#service");
 let service_men = $("#service_men");
 let service__plus = $("#service__plus");
-
+let shad = $("#shad");
 complex.on("click", function(event){
     event.preventDefault();
     complex_men.toggleClass("visible");
@@ -34,11 +34,13 @@ burger.on("click", function(event){
     event.preventDefault();
     menu.removeClass("hidden");
     menu.addClass("visible");
+    shad.removeClass("hidden");
 });
 burgerclose.on("click", function(event){
     event.preventDefault();
     menu.removeClass("visible");
     menu.addClass("hidden");
+    shad.addClass("hidden");
 });
 history.on("click", function(event){
     event.preventDefault();
@@ -158,3 +160,4 @@ $('.partner__slider2').slick({
         }
 ]
 });
+
