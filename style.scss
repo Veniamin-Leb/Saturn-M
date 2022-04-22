@@ -4,6 +4,32 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1001;
+}
+.preloader__image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../IMG/loader.gif') no-repeat;
+    background-size: contain;
+}
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+.loaded .preloader {
+    display: none;
+}
 h1{
     font-family: 'Gilroy';
     font-style: italic;
@@ -630,6 +656,12 @@ footer{
     .container{
         max-width: 800px;
     }
+    .preloader {
+        background: rgb(0, 0, 0);
+    }
+    .preloader__image {
+        top: 30%;
+    }
     header{
         max-width: 800px;
     }
@@ -696,6 +728,12 @@ footer{
 @media(max-width:800px){
     .container{
         max-width: 500px;
+    }
+    .preloader {
+        background: rgb(0, 0, 0);
+    }
+    .preloader__image {
+        top: 30%;
     }
     h1{
         font-size: 40px;
