@@ -1,3 +1,5 @@
+
+
 let about= $("#about");
 let history = $("#history");
 let abouttxt = $("#abouttxt");
@@ -15,6 +17,15 @@ let service = $("#service");
 let service_men = $("#service_men");
 let service__plus = $("#service__plus");
 let shad = $("#shad");
+let more = $("#more");
+let text = $("#text");
+let text_smal = $("#text_smal");
+
+more.on("click", function(event){
+    event.preventDefault();
+    text.toggleClass("hidden");
+    text_smal.toggleClass("hidden");
+});
 complex.on("click", function(event){
     event.preventDefault();
     complex_men.toggleClass("visible");
@@ -98,10 +109,10 @@ $('.partner__slider').slick({
     dots: false,
     infinite: true,
     arrows:false,
-    speed: 300,
+    speed: 100,
     autoplay: true,
     centerMode: true,
-    slidesToShow: 9,
+    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
         {
