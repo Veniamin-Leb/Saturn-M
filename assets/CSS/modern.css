@@ -6,6 +6,37 @@ body {
   box-sizing: border-box;
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1001;
+}
+
+.preloader__image {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../IMG/loader.gif") no-repeat;
+  background-size: contain;
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 h2 {
   font-style: normal;
   font-weight: 700;
@@ -281,6 +312,7 @@ header .container .header__text a:hover span {
 .service__imp .container {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .service__imp .container .imp__left {
@@ -332,6 +364,11 @@ header .container .header__text a:hover span {
   display: flex;
   flex-direction: column;
   margin-top: 54px;
+  margin-bottom: 104px;
+  position: sticky;
+  top: 54px;
+  right: 0;
+  z-index: 5;
 }
 
 .service__imp .container .imp__right h3 {
@@ -420,6 +457,12 @@ footer .container .footer__links .links__block p {
   .container {
     max-width: 800px;
   }
+  .preloader {
+    background: black;
+  }
+  .preloader__image {
+    top: 30%;
+  }
   p {
     font-size: 35px;
     line-height: 37px;
@@ -475,6 +518,12 @@ footer .container .footer__links .links__block p {
 @media (max-width: 800px) {
   .container {
     max-width: 500px;
+  }
+  .preloader {
+    background: black;
+  }
+  .preloader__image {
+    top: 30%;
   }
   h2 {
     font-size: 36px;
