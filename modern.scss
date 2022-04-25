@@ -12,7 +12,7 @@ body{
     right: 0;
     bottom: 0;
     overflow: hidden;
-    background: #fff;
+    background: #111;
     z-index: 1001;
 }
 .preloader__image {
@@ -211,6 +211,27 @@ header{
         backdrop-filter: blur(15px);
     }
 }
+.main__cont{
+    width: 100%;
+
+    display: flex;
+    background: url("../IMG/modern.png") center no-repeat;
+    background-size: 100%;
+
+    .container{
+        padding: 61px 0px;
+        background: rgba(8, 8, 9, 0.2);
+        backdrop-filter: blur(15px);
+        h2{
+            padding: 0;
+            padding-left: 33px;
+        }
+        p{
+            padding-left: 33px;
+            margin: 0;
+        }
+    }
+}
 .modern{
     margin-top: 350px;
     margin-bottom: 97px;
@@ -377,6 +398,34 @@ header{
                 background: #353F63;
                 color: #FFFFFF;
             }
+        }
+    }
+}
+.contacts{
+    padding: 54px 0;
+    .container{
+        h3{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 35px;
+            text-transform: uppercase;
+            color: #353F63;
+            padding-left: 33px;
+            margin: 0;
+        }
+        p{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 35px;
+
+            color: #353F63;
+            padding-left: 33px;
+            margin: 0;
+            margin-bottom: 35px;
         }
     }
 }

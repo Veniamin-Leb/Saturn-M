@@ -11,7 +11,7 @@ body{
     right: 0;
     bottom: 0;
     overflow: hidden;
-    background: #fff;
+    background: #111;
     z-index: 1001;
 }
 .preloader__image {
@@ -194,9 +194,9 @@ header{
             line-height: 30px;
         }
     }
-    .rot{
-        transform: rotate(-45deg);
-    }
+}
+.rot{
+    transform: rotate(-45deg);
 }
 .main{
     width: 100%;
@@ -256,7 +256,7 @@ header{
             }
             a:hover{
                 color: #FFFFFF;
-                background: #353f635d;
+                background: #353F63;
             }
             .active{
                 color: #FFFFFF;
@@ -396,6 +396,7 @@ header{
         }
         .reviews__slidermob{
             display: none;
+            position: relative;
             .slider__block{
                 width: 260px;
                 height: 360px;
@@ -447,7 +448,38 @@ header{
             .slick-slide:first-child{
                 opacity: .5;
             }
-            
+            .slick-dots{
+                width: 100%;
+                list-style: none;
+                display: flex;
+                position: absolute;
+                bottom: -5%;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                z-index: 10;
+                .slick-active{
+                    width: 44px;
+                    height: 4px;
+                    background: #353F63;
+                    border: none;
+                    margin-right: 14px;
+                    margin-top: 2px;
+                    button{
+                        background: none;
+                    }
+                }
+                button{
+                    
+                    width: 44px;
+                    height: 4px;
+                    margin-right: 14px;
+                    color: transparent;
+                    background: rgba(53, 63, 99, 0.3);
+                    border: none;
+                    
+                }
+            }
         }
     }
 }
@@ -472,17 +504,27 @@ header{
         margin-bottom: 5px;
 
         background: #F8F8F8;
+        padding: 38px 0;
+        cursor: pointer;
         .container{
             width: 100%;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
             p{
-                width: 98%;
+                width: 90%;
                 font-weight: 400;
                 font-size: 24px;
+                margin: 0;
             }
             a{
                 margin: auto;
+            }
+            p:last-child{
+                width: 100%;
+                font-size: 18px;
+                line-height: 25px;
+                margin: 0;
             }
         }
     }
@@ -957,9 +999,10 @@ footer{
         .conditions__tet{
             box-shadow: inset 0px 0px 20px rgba(126, 126, 126, 0.3);
             margin: 0;
+            margin: 2px 0;
             .container{
                 p{
-                    width: 98%;
+                    width: 95%;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 40px;
@@ -970,6 +1013,9 @@ footer{
                     img{
                         width: 16px;
                     }
+                }
+                p:last-child{
+                    font-size: 12px;
                 }
             }
         }
