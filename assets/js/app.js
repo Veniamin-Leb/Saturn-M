@@ -1,5 +1,4 @@
 
-
 let about= $("#about");
 let history = $("#history");
 let abouttxt = $("#abouttxt");
@@ -20,6 +19,47 @@ let shad = $("#shad");
 let more = $("#more");
 let text = $("#text");
 let text_smal = $("#text_smal");
+let answer1 = $("#answer1");
+let answer2 = $("#answer2");
+let answer3 = $("#answer3");
+let answer4 = $("#answer4");
+let answer5 = $("#answer5");
+let condition1 = $("#condition1");
+let condition2 = $("#condition2");
+let condition3 = $("#condition3");
+let condition4 = $("#condition4");
+let condition5 = $("#condition5");
+let cond_plus1 = $("#cond_plus1");
+let cond_plus2 = $("#cond_plus2");
+let cond_plus3 = $("#cond_plus3");
+let cond_plus4 = $("#cond_plus4");
+let cond_plus5 = $("#cond_plus5");
+
+condition1.on("click", function(event){
+    event.preventDefault();
+    answer1.toggleClass("hidden");
+    cond_plus1.toggleClass("rot");
+});
+condition2.on("click", function(event){
+    event.preventDefault();
+    answer2.toggleClass("hidden");
+    cond_plus2.toggleClass("rot");
+});
+condition3.on("click", function(event){
+    event.preventDefault();
+    answer3.toggleClass("hidden");
+    cond_plus3.toggleClass("rot");
+});
+condition4.on("click", function(event){
+    event.preventDefault();
+    answer4.toggleClass("hidden");
+    cond_plus4.toggleClass("rot");
+});
+condition5.on("click", function(event){
+    event.preventDefault();
+    answer5.toggleClass("hidden");
+    cond_plus5.toggleClass("rot");
+});
 
 more.on("click", function(event){
     event.preventDefault();
@@ -89,6 +129,7 @@ $('.reviews__slider').slick({
         {
             breakpoint: 800,
             settings: {
+                
                 slidesToShow: 3,
                 slidesToScroll: 1,
             }
@@ -96,7 +137,7 @@ $('.reviews__slider').slick({
 ]
 });
 $('.reviews__slidermob').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     arrows:true,
     speed: 300,
