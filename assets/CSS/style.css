@@ -12,7 +12,7 @@ body {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  background: #fff;
+  background: #111;
   z-index: 1001;
 }
 
@@ -207,7 +207,7 @@ header .header__text a:hover span {
   line-height: 30px;
 }
 
-.header__menu .rot {
+.rot {
   transform: rotate(-45deg);
 }
 
@@ -276,7 +276,7 @@ header .header__text a:hover span {
 
 .about .container .about__buttons a:hover {
   color: #FFFFFF;
-  background: #353f635d;
+  background: #353F63;
 }
 
 .about .container .about__buttons .active {
@@ -429,6 +429,7 @@ header .header__text a:hover span {
 
 .reviews .reviews__content .reviews__slidermob {
   display: none;
+  position: relative;
 }
 
 .reviews .reviews__content .reviews__slidermob .slider__block {
@@ -488,6 +489,40 @@ header .header__text a:hover span {
   opacity: .5;
 }
 
+.reviews .reviews__content .reviews__slidermob .slick-dots {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: -5%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.reviews .reviews__content .reviews__slidermob .slick-dots .slick-active {
+  width: 44px;
+  height: 4px;
+  background: #353F63;
+  border: none;
+  margin-right: 14px;
+  margin-top: 2px;
+}
+
+.reviews .reviews__content .reviews__slidermob .slick-dots .slick-active button {
+  background: none;
+}
+
+.reviews .reviews__content .reviews__slidermob .slick-dots button {
+  width: 44px;
+  height: 4px;
+  margin-right: 14px;
+  color: transparent;
+  background: rgba(53, 63, 99, 0.3);
+  border: none;
+}
+
 .conditions {
   width: 100%;
   display: flex;
@@ -509,22 +544,33 @@ header .header__text a:hover span {
   width: 100%;
   margin-bottom: 5px;
   background: #F8F8F8;
+  padding: 38px 0;
+  cursor: pointer;
 }
 
 .conditions .conditions__tet .container {
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .conditions .conditions__tet .container p {
-  width: 98%;
+  width: 90%;
   font-weight: 400;
   font-size: 24px;
+  margin: 0;
 }
 
 .conditions .conditions__tet .container a {
   margin: auto;
+}
+
+.conditions .conditions__tet .container p:last-child {
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
 }
 
 .partner {
@@ -931,9 +977,10 @@ footer .container .footer__links .links__block p {
   .conditions .conditions__tet {
     box-shadow: inset 0px 0px 20px rgba(126, 126, 126, 0.3);
     margin: 0;
+    margin: 2px 0;
   }
   .conditions .conditions__tet .container p {
-    width: 98%;
+    width: 95%;
     font-weight: 400;
     font-size: 16px;
     line-height: 40px;
@@ -944,6 +991,9 @@ footer .container .footer__links .links__block p {
   }
   .conditions .conditions__tet .container a img {
     width: 16px;
+  }
+  .conditions .conditions__tet .container p:last-child {
+    font-size: 12px;
   }
   .partner {
     width: 100%;
