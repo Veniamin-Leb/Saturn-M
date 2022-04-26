@@ -13,9 +13,7 @@
     <div class="preloader">
         <div class="preloader__image"></div>
     </div>
-    <div class="shadow hidden" id="shad">
-    </div>
-    <header>
+    <header id="navbar">
         <div class="container">
             <div class="header__logo">
                 <img src="assets/IMG/LOGO.svg" alt="#">
@@ -28,40 +26,42 @@
                 </a>
             </div>
         </div>
+        <div class="header__menu hidden" id="menu">
+            <div class="burger" id="burgerclose">
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="#" id="complex">Complex solution <img src="assets/IMG/plus_men.svg" alt="#" id="complex__plus"></a>
+            <div class="menu__sub hidden" id="complex_men">
+                <a href="industry.html">Industrial orientation</a>
+                <a href="technology.html">Technological equipment</a>
+            </div>
+            <a href="#" id="gear">Gearboxes <img src="assets/IMG/plus_men.svg" alt="#" id="gear__plus"></a>
+            <div class="menu__sub hidden" id="gear_men">
+                <a href="modernization.html">Modernization</a>
+                <a href="enginearing.html">Engineering</a>
+                <a href="import.html">Import substitution</a>
+            </div>
+            <a href="#" id="service">Service support <img src="assets/IMG/plus_men.svg" alt="#" id="service__plus"></a>
+            <div class="menu__sub hidden" id="service_men">
+                <a href="service.html#1">Maintenance and repair</a>
+                <a href="service.html#2">Consultation/recommendations on operation</a>
+                <a href="service.html#3">Repair of foreign gearboxes</a>
+                <a href="service.html#4">Spare parts for supplied equipment</a>
+                <a href="service.html#5">Technical audit</a>
+                <a href="service.html#6">Cost optimization</a>
+                <a href="service.html#7">Equipment operation monitoring system</a>
+            </div>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        <div class="shadow hidden" id="shad">
+        </div>
     </header>
-    <div class="header__menu hidden" id="menu">
-        <div class="burger" id="burgerclose">
-            <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-        <a href="index.html">Home</a>
-        <a href="#" id="complex">Complex solution <img src="assets/IMG/plus_men.svg" alt="#" id="complex__plus"></a>
-        <div class="menu__sub hidden" id="complex_men">
-            <a href="industry.html">Industrial orientation</a>
-            <a href="technology.html">Technological equipment</a>
-        </div>
-        <a href="#" id="gear">Gearboxes <img src="assets/IMG/plus_men.svg" alt="#" id="gear__plus"></a>
-        <div class="menu__sub hidden" id="gear_men">
-            <a href="modernization.html">Modernization</a>
-            <a href="enginearing.html">Engineering</a>
-            <a href="import.html">Import substitution</a>
-        </div>
-        <a href="#" id="service">Service support <img src="assets/IMG/plus_men.svg" alt="#" id="service__plus"></a>
-        <div class="menu__sub hidden" id="service_men">
-            <a href="service.html#1">Maintenance and repair</a>
-            <a href="service.html#2">Consultation/recommendations on operation</a>
-            <a href="service.html#3">Repair of foreign gearboxes</a>
-            <a href="service.html#4">Spare parts for supplied equipment</a>
-            <a href="service.html#5">Technical audit</a>
-            <a href="service.html#6">Cost optimization</a>
-            <a href="service.html#7">Equipment operation monitoring system</a>
-        </div>
-        <a href="contacts.html">Contacts</a>
-    </div>
-    <section class="main__eng">
+    <section class="main__eng" id="main">
         <div class="container">
             <h2>Engineering</h2>
             <p>The technological capabilities of our production sites and the equipment with an up-to-date machine park allow us to produce an extensive range of high-quality special gearboxes</p> 
@@ -356,6 +356,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/load.js"></script>
     <script src="assets/js/industry.js"></script>
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
