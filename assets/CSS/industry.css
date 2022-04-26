@@ -79,14 +79,18 @@ p {
 }
 
 header {
+  display: flex;
+  position: relative;
   width: 100%;
-  background: #080809;
-  padding: 55px 0 26px;
+  background: #050505;
+  margin: 0 auto;
+  padding: 30px 0;
   color: #fff;
 }
 
 header .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -97,14 +101,6 @@ header .container .header__logo {
 header .container .header__text {
   display: flex;
   margin: auto 0;
-}
-
-header .container .header__text p {
-  padding-right: 45px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  color: #FFFFFF;
 }
 
 header .container .header__text a {
@@ -123,9 +119,24 @@ header .container .header__text a:hover span {
   background: #c7c7c7;
 }
 
-.shadow {
-  position: absolute;
+.sticky {
+  position: fixed;
   top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0;
+  animation: menu .3s linear forwards;
+  background: #050505;
+  padding: 10px 0;
+}
+
+.sticky .container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.shadow {
+  position: fixed;
   left: 0;
   z-index: 3;
   width: 100%;
@@ -149,7 +160,7 @@ header .container .header__text a:hover span {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 7;
+  z-index: 9;
   background: #F8F8F8;
   padding-left: 40px;
   padding-top: 65px;
@@ -658,6 +669,9 @@ footer .container .footer__links .links__block p {
   h2 {
     font-size: 36px;
     line-height: 40px;
+  }
+  .sticky {
+    padding: 10px 0;
   }
   p {
     font-size: 25px;

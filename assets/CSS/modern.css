@@ -69,8 +69,7 @@ p {
 }
 
 .shadow {
-  position: absolute;
-  top: 0;
+  position: fixed;
   left: 0;
   z-index: 3;
   width: 100%;
@@ -80,14 +79,17 @@ p {
 }
 
 header {
+  display: flex;
   width: 100%;
-  background: #080809;
-  padding: 55px 0 26px;
+  background: #050505;
+  margin: 0 auto;
+  padding: 30px 0;
   color: #fff;
 }
 
 header .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -124,6 +126,22 @@ header .container .header__text a:hover span {
   background: #c7c7c7;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0;
+  animation: menu .3s linear forwards;
+  background: #050505;
+  padding: 10px 0;
+}
+
+.sticky .container {
+  position: relative;
+  margin: 0 auto;
+}
+
 .hidden {
   display: none;
 }
@@ -139,7 +157,7 @@ header .container .header__text a:hover span {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 9;
   background: #F8F8F8;
   padding-left: 40px;
   padding-top: 65px;
@@ -344,7 +362,7 @@ header .container .header__text a:hover span {
 
 .service__imp .container .imp__left h2 {
   padding: 0;
-  padding-top: 54px;
+  padding-top: 100px;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -389,9 +407,9 @@ header .container .header__text a:hover span {
   margin-top: 54px;
   margin-bottom: 104px;
   position: sticky;
-  top: 54px;
+  top: 104px;
   right: 0;
-  z-index: 5;
+  z-index: 2;
 }
 
 .service__imp .container .imp__right h3 {
@@ -417,6 +435,11 @@ header .container .header__text a:hover span {
   margin-bottom: 10px;
   padding: 4px 0;
   padding-left: 7px;
+}
+
+.service__imp .container .imp__right .active {
+  background: #353F63;
+  color: #FFFFFF;
 }
 
 .service__imp .container .imp__right a:hover {
@@ -575,6 +598,9 @@ footer .container .footer__links .links__block p {
   }
   .preloader__image {
     top: 30%;
+  }
+  .sticky {
+    padding: 10px 0;
   }
   h2 {
     font-size: 36px;
