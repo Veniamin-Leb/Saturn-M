@@ -212,4 +212,22 @@ $('.partner__slider2').slick({
         }
 ]
 });
-
+$('.product__slider1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
+$('.product__slider2').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
